@@ -6,7 +6,7 @@ android {
     buildToolsVersion "25.0.0"
 
     defaultConfig {
-        applicationId "com.kodelabs.boilerplate"
+        applicationId "com.basic.boilerplate"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1

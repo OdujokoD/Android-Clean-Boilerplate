@@ -21,7 +21,7 @@ To see a sample app using Clean Architecture you can look [here].
 
 You will want to make a few minor changes when using this template:
 
-- Rename the base package `com.kodelabs.boilerplate` to your preferred name. *[How to]*
+- Rename the base package `basic.boilerplate` to your preferred name. *[How to]*
 - Modify the `applicationId` in your `app/build.gradle` to the base package name you set in the above step.
 - Modify `package` in manifest tag in AndroidManifest.xml
 
@@ -117,11 +117,11 @@ This just attempts to retrieve the message and sends the message or the error to
 Let's take a look which dependencies does this Interactor have:
 
 ```java
-import com.kodelabs.boilerplate.domain.executor.Executor;
-import com.kodelabs.boilerplate.domain.executor.MainThread;
-import com.kodelabs.boilerplate.domain.interactors.WelcomingInteractor;
-import com.kodelabs.boilerplate.domain.interactors.base.AbstractInteractor;
-import com.kodelabs.boilerplate.domain.repository.MessageRepository;
+import basic.boilerplate.domain.executor.Executor;
+import basic.boilerplate.domain.executor.MainThread;
+import basic.boilerplate.domain.interactors.WelcomingInteractor;
+import basic.boilerplate.domain.interactors.base.AbstractInteractor;
+import basic.boilerplate.domain.repository.MessageRepository;
 ```
 
 As you can see, there is **no mention of any Android code**. That is the **main benefit** of this approach. Also, we do not care about specifics of the UI or database, we just call interface methods that someone somewhere in the outer layer will implement.
